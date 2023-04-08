@@ -49,7 +49,7 @@ app.use((request, response, next) => {
 // Error handler
 app.use((error, request, response, next) => {
   console.error(error);
-  response.send(error);
+  response.status(400).send(error);
 });
 
 module.exports = app;
