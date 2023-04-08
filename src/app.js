@@ -36,7 +36,7 @@ app.post("/pastes", (req, res, next) => {
     res.status(201).json({ data: newPaste });
   }
   else{
-    res.sendStatus(401);
+    res.sendStatus(400);
   }
   
 });
